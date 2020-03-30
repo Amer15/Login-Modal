@@ -1,0 +1,107 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+
+.container{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.modal{
+    position: absolute;
+    width:100%;
+    height: 100vh;
+    background:rgba(0, 0, 0, 0.8);
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    animation-name: opacity;
+    animation-duration: 200ms;
+}
+
+@keyframes opacity{
+    0%{
+        opacity: 0.3;
+    }
+    50%{
+       opacity: 0.6;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+
+.form{
+    background:#DAE0E2;
+    font-family: sans-serif;
+    width:400px;
+    height:300px;
+    border-radius: 10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:10px 10px;
+    box-shadow: 2px 3px 4px #535C68;
+    position:relative;
+}
+
+.form a{
+    text-decoration: none;
+}
+
+
+.closeBtn{
+    position:absolute;
+    top:8px;
+    right:18px;
+    cursor:pointer;
+    font-size: 30px;
+    transform: rotate(45deg)
+}
+
+.form label{
+    padding: 20px 0px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.form input{
+    padding: 10px 35px;
+    outline:none;
+}
+
+.btn{
+    margin-top: 20px;
+    padding: 10px 50px;
+    color:white;
+    background:#1BCA9B;
+    cursor:pointer;
+    border-radius: 5px
+}
+
+.btn:hover{
+    box-shadow: 1px 1px 4px #333945
+}
+
+.openBtn{
+    padding: 10px 30px;
+    font-size: 15px;
+    background: purple;
+    color: rgb(244, 246, 247);
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.close {
+display: none
+}
